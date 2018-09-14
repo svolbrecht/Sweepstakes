@@ -18,8 +18,8 @@ namespace Sweepstakes
 
         public Sweepstakes GetSweepstakes()
         {
-            Sweepstakes currentSweepstakes = sweepstakesQueue.Dequeue();
-            return currentSweepstakes;
+            Sweepstakes queueCurrentSweepstakes = sweepstakesQueue.Dequeue();
+            return queueCurrentSweepstakes;
         }
     }
 }
