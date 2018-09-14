@@ -8,5 +8,25 @@ namespace Sweepstakes
 {
     class Sweepstakes
     {
+    	Sweepstakes(string name)
+        {
+
+        }
+
+    	void RegisterContestant(Contestant contestant)
+        {
+
+        }
+
+    	public string PickWinner()
+        {
+
+        }
+
+    	void PrintContestantInfo(Contestant contestant)
+        {
+
+        }
+
     }
 }

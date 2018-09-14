@@ -1,0 +1,2 @@
+C:\Users\svolb\Desktop\DCCmaterials\Sweepstakes\Sweepstakes\Sweepstakes\Sweepstakes\obj\Debug\Sweepstakes.csprojAssemblyReference.cache
+C:\Users\svolb\Desktop\DCCmaterials\Sweepstakes\Sweepstakes\Sweepstakes\Sweepstakes\obj\Debug\Sweepstakes.csproj.CoreCompileInputs.cache
