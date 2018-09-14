@@ -9,6 +9,10 @@ namespace Sweepstakes
     class UserInterface
     {
 
+        public string sweepstakesName;
+
+
+
         public void CreateContestant()
         {
             Contestant contestant = new Contestant();
@@ -42,5 +46,10 @@ namespace Sweepstakes
             return userInput;
         }
 
+        public static string NameSweepstakes()
+        {
+            string userInput = UserInput("Enter sweepstakes name");
+            return userInput;
+        }
     }
 }
