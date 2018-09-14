@@ -8,13 +8,22 @@ namespace Sweepstakes
 {
     class Sweepstakes
     {
+        Contestant contestant;
+        public string sweepstakesName;
 
         Dictionary<string, Contestant> contestants = new Dictionary<string, Contestant>();
 
 
-    	public Sweepstakes()
+        public void CreateContestant()
         {
-            UserInterface.NameSweepstakes();
+            contestant = new Contestant();
+
+        }
+
+        public Sweepstakes()
+        {
+        sweepstakesName = UserInterface.NameSweepstakes();
+            
         }
 
     	void RegisterContestant(Contestant contestant)
@@ -29,7 +38,7 @@ namespace Sweepstakes
 
     	void PrintContestantInfo(Contestant contestant)
         {
-            Console.WriteLine("Information for contestant registration number: {0}\nName: {1} {2}\nEmail Address: {3}", contestant.registrationNumber, contestant.firstName, contestant.lastName, contestant.emailAddress);
+            Console.WriteLine("Contestant information: {0}\nName: {1} {2}\nEmail Address: {3}", contestant.registrationNumber, contestant.firstName, contestant.lastName, contestant.emailAddress);
         }
 
     }
