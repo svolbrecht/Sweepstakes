@@ -9,14 +9,17 @@ namespace Sweepstakes
     class SweepstakesQueueManager : ISweepstakesManager
     {
 
-        void InsertSweepstakes(Sweepstakes sweepstakes)
-        {
+        Queue<Sweepstakes> sweepstakesQueue = new Queue<Sweepstakes>();
 
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
+        {
+            sweepstakesQueue.Enqueue(sweepstakes);
         }
 
         public Sweepstakes GetSweepstakes()
         {
-
+            Sweepstakes currentSweepstakes = sweepstakesQueue.Dequeue();
+            return currentSweepstakes;
         }
     }
 }
