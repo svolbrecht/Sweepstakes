@@ -9,6 +9,7 @@ namespace Sweepstakes
     class MarketingFirm
     {
 
+        ISweepstakesManager sweepstakesManager;
         public void MarketingFirmActions()
         {
             while (true)
@@ -19,13 +20,13 @@ namespace Sweepstakes
                         FactoryPattern.ChooseSweepstakesManager();
                         break;
                     case "2":
-                        Sweepstakes.CreateContestant();
+                        //Sweepstakes.CreateContestant();
                         break;
                     case "3":
-                        Sweepstakes.CreateSweepstakes();
+                        //Sweepstakes.CreateSweepstakes();
                         return;
                     case "4":
-                        Sweepstakes.RegisterContestant();
+                        //Sweepstakes.RegisterContestant();
                         break;
                     case "5":
                         Environment.Exit(0);
