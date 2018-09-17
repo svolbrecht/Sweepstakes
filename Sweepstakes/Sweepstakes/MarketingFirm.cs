@@ -8,5 +8,7 @@ namespace Sweepstakes
 {
     class MarketingFirm
     {
+
+
     }
 }

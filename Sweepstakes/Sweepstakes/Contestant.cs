@@ -11,7 +11,7 @@ namespace Sweepstakes
         public string firstName;
         public string lastName;
         public string emailAddress;
-        public string registrationNumber;
+        public int registrationNumber;
 
 
         public Contestant()
@@ -19,7 +19,13 @@ namespace Sweepstakes
             lastName = UserInterface.SetLastName();
             firstName = UserInterface.SetFirstName();
             emailAddress = UserInterface.SetEmailAddress();
-            registrationNumber = UserInterface.SetRegistrationNumber();
+            registrationNumber = SetRegistrationNumber();
+        }
+
+        public int SetRegistrationNumber()
+        {
+            registrationNumber++;
+            return registrationNumber;       
         }
     }
 }

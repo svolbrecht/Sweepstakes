@@ -31,11 +31,6 @@ namespace Sweepstakes
             string userInput = UserInput("Enter email address");
             return userInput;
         }
-        public static string SetRegistrationNumber()
-        {
-            string userInput = UserInput("Enter registration number");
-            return userInput;
-        }
 
         public static string NameSweepstakes()
         {
