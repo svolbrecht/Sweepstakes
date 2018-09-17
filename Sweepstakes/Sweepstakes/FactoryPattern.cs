@@ -8,7 +8,7 @@ namespace Sweepstakes
 {
     class FactoryPattern
     {
-        public static ISweepstakesManager ChooseType()
+        public static ISweepstakesManager ChooseSweepstakesManager()
         {
             string userInput = UserInterface.UserInput("Choose preferred Sweepstakes Manager:\nFor Stack style - Press '1'\nFor Queue style - Press '2'");
             switch (userInput)

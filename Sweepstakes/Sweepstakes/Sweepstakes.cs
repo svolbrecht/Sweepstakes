@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Sweepstakes
 {
-    class Sweepstakes
+    public class Sweepstakes
     {
-        Contestant contestant;
-        public string sweepstakesName;
+        static Contestant contestant;
+        public static string sweepstakesName;
         private Random random;
         int winner;
         Contestant contestantWinner;
@@ -20,14 +20,16 @@ namespace Sweepstakes
         public void CreateContestant()
         {
             contestant = new Contestant();
+            contestants.Add(contestant.registrationNumber, contestant);
         }
 
-        public Sweepstakes()
+        public void CreateSweepstakes()
         {
-            sweepstakesName = UserInterface.NameSweepstakes();           
+            sweepstakesName = UserInterface.NameSweepstakes();   
+            
         }
 
-    	void RegisterContestant(Contestant contestant)
+    	public void RegisterContestant()
         {
             contestants.Add(contestant.registrationNumber, contestant);
         }
@@ -47,7 +49,7 @@ namespace Sweepstakes
             return contestantWinner;
         }
 
-    	void PrintContestantInfo(Contestant contestantWinner)
+        void PrintContestantInfo(Contestant contestantWinner)
         {
             Console.WriteLine("Contestant information: {0}\nName: {1} {2}\nEmail Address: {3}", contestant.registrationNumber, contestant.firstName, contestant.lastName, contestant.emailAddress);
         }

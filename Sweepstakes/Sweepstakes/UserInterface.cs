@@ -38,6 +38,10 @@ namespace Sweepstakes
             return userInput;
         }
 
-
+        public static string GetMarketingFirmAction()
+        {
+            string userInput = UserInput("Choose acion:\nTo choose sweepstakes manager type - Press '1'\nTo create a contestant - Press '2'\nTo create a sweepstakes - Press '3'\nTo add a contestant to a sweepstakes - Press '4'\nTo exit application - Press '5'");
+            return userInput;
+        }
     }
 }
